@@ -30,7 +30,7 @@
 </form>
 {#if $postHistoryLoaded}
     {#each $postList.reverse() as post}
-        <p><strong>{post.u}:</strong> {post.p}</p>
+        <p><strong>{post.u}:</strong> {@html post.p}</p>
     {/each}
 {:else}
     <p>Loading posts...</p>
